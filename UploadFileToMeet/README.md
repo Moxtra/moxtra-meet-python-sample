@@ -13,7 +13,7 @@ Please feel free to clone the repository and follow the steps below.
 
 <<<<<<< HEAD
 ####Clone the sample project from github:
-	git clone https://github.com/sanjayiyerkudaliprasannakumar/Pyhton-Sample-Code.git
+	git clone https://github.com/sanjayiyerkudaliprasannakumar/Python-Sample-Code.git
 =======
 ## Clone the sample project from github
 	git clone https://github.com/Moxtra/xxxxxx
