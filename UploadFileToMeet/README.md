@@ -11,14 +11,12 @@ Please feel free to clone the repository and follow the steps below.
 
 ## Setup
 
-<<<<<<< HEAD
 ####Clone the sample project from github:
 	git clone https://github.com/sanjayiyerkudaliprasannakumar/Python-Sample-Code.git
 =======
 ## Clone the sample project from github
 	git clone https://github.com/Moxtra/xxxxxx
 
->>>>>>> origin/master
 
 ## Register your App
 	You can register your Moxtra App here: https://developer.moxtra.com/nextapps. Once you register, 
