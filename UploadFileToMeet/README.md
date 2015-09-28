@@ -142,7 +142,7 @@ server codes are clients to Moxtra REST API Service.
                                 }
                             };
 
-                            **Moxtra.init(options);** // Initialise the moxtra user
+                            Moxtra.init(options); // Initialise the moxtra user
 
                         } 
 
