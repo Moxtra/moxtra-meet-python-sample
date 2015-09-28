@@ -30,13 +30,12 @@ client_secret = "INPUT_YOUR_CLIENT_SECRET"
 # Function to upload file
 @app.route('/uploadFile')
 def upload_page():
-    print "inside upload"
     # TODO: please change the sessionid, key, name...
     sessionid = request.args.get('session_id')
     sessionkey = request.args.get('session_key')
     filepath = request.args.get('file_path')
 
-    #print filepath
+    
     head, tail = ntpath.split(filepath)
 
     params = {
@@ -50,10 +49,10 @@ def upload_page():
         print filepath
         data = f.read()
         res = requests.post(UPLOAD_URL, params = params, data = data)
-        #print res.status_code
-        #print res.text
+        print res.status_code
+        print res.text
         response = make_response(res.text)
-        #print response
+        
 
     return response
 
@@ -62,7 +61,7 @@ def upload_page():
 @app.route('/getAccessToken')
 def get_access_token():
 
-    #print client_id
+    
     
     # Unique ID of how user is identified in your system
     unique_id = request.args.get('uniqueid')
@@ -75,10 +74,7 @@ def get_access_token():
     
     # Create signature
     timestamp = str(int(time.time() * 1000))
-    #msg = client_id + unique_id + timestamp
-    #signature = base64.urlsafe_b64encode(hmac.new(key=client_secret, msg=msg, digestmod=hashlib.sha256).digest())
-    # remove the tail "="
-    #signature = re.sub(r'=+$', '', signature)
+    
     
     params = {
             'client_id': client_id,
@@ -89,13 +85,13 @@ def get_access_token():
             'firstname': firstname,
             'lastname': lastname,
             }
-    #r = request.post(REQUEST_URL, params = params)
+    
     r = requests.post(REQUEST_URL, params = params)
-    #print r.status_code
-    #print r.text
+    print r.status_code
+    print r.text
 
     response = make_response(r.text)
-    #print response
+    
 
     return response
 
