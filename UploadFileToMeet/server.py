@@ -23,8 +23,8 @@ REQUEST_URL = "https://apisandbox.moxtra.com/oauth/token"
 UPLOAD_URL = "https://sandbox.moxtra.com/board/upload"
 
 # Moxtra App Credentials from developer.moxtra.com
-client_id = "lRRdl5_hDlU"
-client_secret = "hFiftBXEW3g"
+client_id = "INPUT_YOUR_CLIENT_ID"
+client_secret = "INPUT_YOUR_CLIENT_SECRET"
 
 
 # Function to upload file
